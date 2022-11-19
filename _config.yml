@@ -27,7 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.fention.de" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 
 header_pages:
   - retro_interfaces.md
