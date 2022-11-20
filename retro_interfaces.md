@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Retro Interfaces
 permalink: /retro_interfaces/
 ---
