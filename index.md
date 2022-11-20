@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 ![](https://images.pexels.com/photos/159220/printed-circuit-board-print-plate-via-macro-159220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
