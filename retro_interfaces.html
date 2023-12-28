@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Fention Engineering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href=".img\favicon.ico">
+    <link rel="icon" href=".img\favicon.ico" type="image/x-icon">
+    <!--
+ /\     /\
+{  `---'  }
+{  ^   ^  }
+/   \_/   \
+/  ____     \
+\/ /    \    |
+ |  |  |   |
+ \  |__|  /
+  \______/
+-->
+    <style>
+        @font-face {
+            font-family: 'TitilliumWeb-Regular';
+            src: url('.font/TitilliumWeb-Regular.ttf') format('truetype');
+        }
+        body {
+            font-family: 'TitilliumWeb-Regular', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #banner {
+            background-color: #124186;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        #banner img {
+            width: 300px;
+        }
+        #menu {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 2;
+        }
+        #menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+        }
+        #image1 {
+            width: 100%;
+        }
+        #image1-text {
+            font-family: 'TitilliumWeb-Regular', sans-serif;
+            font-size: 32px;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .section {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+        }
+        .section-text {
+            font-family: 'TitilliumWeb-Regular', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            width: 500px;
+        }
+        .section-text h3 {
+            font-family: 'TitilliumWeb-Regular', sans-serif;
+            color: #124186;
+            font-size: 35px;
+            text-align: center;
+            width: 500px;
+        }
+        footer {
+            background-color: #f2f2f2;
+            text-align: center;
+            margin-left: 10px;
+            padding: 20px;
+            margin-top: 70px;
+        }
+        .footer-link:visited {
+            text-decoration: none;
+            color: #124186;
+        }
+        #sym1 {
+            width: 400px;
+        }
+        .buttons {
+            display: flex;
+        }
+        .button {
+            background-color: #f2f2f2;
+            color: #303030;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-left: 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .product-box {
+            width: 1000px;
+            height: 400px;
+            background-color: #f2f2f2;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 25%;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product-box:hover {
+            transform: scale(1.05);
+        }
+        .product-button {
+            background-color: #124186;
+            color: #ffffff;
+            width: 200px;
+            height: 25px;
+            text-align: center;
+            padding: 10px 15px;
+            border-radius: 25px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+        .product-img {
+            border-radius: 10px;
+            max-width: 40%;
+        }
+        .product-details {
+            margin-left: 20px;
+            flex: 1;
+        }
+        .product-name {
+            font-size: 35px;
+            margin-top: -200px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .product-description {
+            margin-bottom: 25px;
+        }
+        .product-price {
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+            #banner {
+                height: 100px;
+            }
+            #banner img {
+                order: 1;
+                width: 200px;
+                height: 50px;
+            }
+            #menu {
+                order: 2;
+                display: flexbox;
+                align-items: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            #menu a {
+                font-size: 19px;
+            }
+    #image1-text {
+        display: none;
+    }
+    #sym1 {
+        width: 200px;
+    }
+    .product-box {
+        width: 330px;
+        height: 150px;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 2%;
+    }
+    .product-button {
+        background-color: #124186;
+        color: #ffffff;
+        width: 50px;
+        height: 20px;
+        text-align: center;
+        border-radius: 25px;
+        text-decoration: none;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .product-name {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .product-description {
+        display: none;
+    }
+    .product-details {
+        width: 200px;
+    }
+    .product-img {
+        width: 200px;
+    }
+    .product-price {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+<div id="banner">
+    <a href="#"> <img src=".img\header.svg" alt="Logo"></a>
+    <div id="menu">
+        <a href="about.html">About</a>
+        <a href="retro_interfaces.html">Retro Interfaces</a>
+        <a href="upper_air.html">Upper Air</a>
+    </div>
+</div>
+<div class="product-box soosh1">
+    <img src=".img/img1.png" alt="Produktbild" class="product-img">
+    <div class="product-details">
+        <div class="product-name">SD-Stick Special Offer</div>
+        <div class="product-description">Produktbeschreibung</div>
+        <div class="buttons">
+            <a href="https://ko-fi.com/s/ddc17a6052" class="product-button">to Ko-Fi shop</a>
+            <a href="#" class="product-button">declaration of conformity</a>
+        </div>
+    </div>
+</div>
+<div class="product-box">
+    <img src=".img/img2.png" alt="Produktbild" class="product-img">
+    <div class="product-details">
+        <div class="product-name">SD-Stick (Lite)</div>
+        <div class="product-description">This Programmer can be used to program the SD-Stick or SD-Stick Lites. It contains a CH341A chip and is compatible with all available software. It also has two indicator LEDs for Power/Operation. Make sure to insert the SD stick with the contacts facing down towards the circuit board!
+        </div>
+        <div class="buttons">
+            <a href="https://ko-fi.com/s/524eef7e9d" class="product-button">to Ko-Fi shop</a>
+            <a href="#" class="product-button">declaration of conformity</a>
+        </div>
+    </div>
+</div>
+<div class="product-box">
+    <img src=".img/img3.png" alt="Produktbild" class="product-img">
+    <div class="product-details">
+        <div class="product-name">SD-Stick Programmer</div>
+        <div class="product-description">This Programmer can be used to program the SD-Stick or SD-Stick Lites. It contains a CH341A chip and is compatible with all available software. It also has two indicator LEDs for Power/Operation. Make sure to insert the SD stick with the contacts facing down towards the circuit board!
+        </div>
+        <div class="buttons">
+            <a href="https://ko-fi.com/s/8627dd37e4" class="product-button">to Ko-Fi shop</a>
+            <a href="#" class="product-button">declaration of conformity</a>
+        </div>
+    </div>
+</div>
+<div class="product-box">
+    <img src=".img/img4.png" alt="Produktbild" class="product-img">
+    <div class="product-details">
+        <div class="product-name">D-Com Interface</div>
+        <div class="product-description">This is a D-Com Programmer for W0rld, Alpha Tools etc.
+
+            There are plenty of A-Com/D-Com Programmers out there, why should you buy this one?
+            </div>
+        <div class="buttons">
+            <a href="https://ko-fi.com/s/7ca045ff98" class="product-button">to Ko-Fi shop</a>
+            <a href="#" class="product-button">declaration of conformity</a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div>
+        <p>fention engineering Inh. Johannes Frielingsdorf</p>
+        <a class="footer-link" href="imprint.html">Imprint</a>
+        <a class="footer-link" href="privacy_policy.html">Privacy Policy</a>
+    </div>
+</footer>
+</body>
+</html>
