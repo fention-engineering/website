@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fention Engineering</title>
+    <title>fention engineering</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href=".img/favicon.ico">
-    <link rel="icon" href=".img/favicon.ico" type="image/x-icon">
+
     <style>
         @font-face {
             font-family: 'TitilliumWeb-Regular';
-            src: url('.font/TitilliumWeb-Regular.ttf') format('truetype');
+            src: url('/assets/font/TitilliumWeb-Regular.ttf') format('truetype');
         }
+
         body {
             font-family: 'TitilliumWeb-Regular', sans-serif;
             margin: 0;
             padding: 0;
         }
+
         #banner {
             background-color: #124186;
             display: flex;
@@ -26,23 +24,28 @@
             justify-content: space-between;
             padding: 10px;
         }
+
         #banner img {
             width: 300px;
         }
+
         #menu {
             display: flex;
             justify-content: space-around;
             flex-grow: 2;
         }
+
         #menu a {
             margin: 0 10px;
             text-decoration: none;
             color: rgb(255, 255, 255);
             font-size: 25px;
         }
+
         #image1 {
             width: 100%;
         }
+
         #image1-text {
             font-family: 'TitilliumWeb-Regular', sans-serif;
             font-size: 32px;
@@ -53,11 +56,13 @@
             text-align: center;
             color: white;
         }
+
         .section {
             display: flex;
             justify-content: space-between;
             padding: 30px;
         }
+
         .section-text {
             font-family: 'TitilliumWeb-Regular', sans-serif;
             font-size: 18px;
@@ -65,6 +70,7 @@
             margin-bottom: 150px;
             width: 500px;
         }
+
         .section-text h3 {
             font-family: 'TitilliumWeb-Regular', sans-serif;
             color: #124186;
@@ -72,6 +78,7 @@
             text-align: center;
             width: 500px;
         }
+
         footer {
             background-color: #f2f2f2;
             text-align: center;
@@ -79,12 +86,10 @@
             padding: 20px;
             margin-top: auto;
         }
+
         .footer-link:visited {
             text-decoration: none;
             color: #124186;
-        }
-        #sym1 {
-            width: 400px;
         }
 
         /* Mobile styles */
@@ -92,81 +97,84 @@
             #banner {
                 height: 100px;
             }
+
             #banner img {
                 order: 1;
                 width: 200px;
                 height: 50px;
             }
+
             #menu {
                 order: 2;
-                display: flexbox;
+                display: flex;
                 align-items: center;
                 flex-direction: column;
-                align-items: center;
             }
+
             #menu a {
                 font-size: 19px;
             }
+
             #image1-text {
                 display: none;
             }
+
             .section {
                 flex-direction: column;
                 align-items: center;
                 padding: 10px;
             }
+
             .section-text {
                 width: 350px;
                 margin-bottom: 50px;
                 font-size: 16px;
             }
+
             .section-text h3 {
                 width: 350px;
                 margin-bottom: 10px;
                 font-size: 20px;
-            }
-            #sym1 {
-                width: 200px;
             }
         }
     </style>
 </head>
 <body>
 <div id="banner">
-    <a href="#"><img src=".img/header.svg" alt="Logo"></a>
+    <a href="/"><img src="assets/images/header.svg" alt="Logo"></a>
     <div id="menu">
-        <a href="about.html">About</a>
-        <a href="retro_interfaces.html">Retro Interfaces</a>
-        <a href="upper_air.html">Upper Air</a>
+        <a href="/about.html">About</a>
+        <a href="/retro_interfaces.html">Retro Interfaces</a>
+        <a href="/upper_air.html">Upper Air</a>
     </div>
 </div>
-<img id="image1" src=".img/image1.png" alt="Bild">
+<img id="image1" src="assets/images/image1.png" alt="Bild">
 <div id="image1-text">
-    <h2>Ihr Unternehmen. Ihre Ideen. Verwirklicht.</h2>
-    <p>Egal ob Website, App oder Desktopanwendung</p>
+    <h2>Ihre Ideen. Verwirklicht.</h2>
+    <p>Egal ob Retro Interfaces oder Upper-Air</p>
 </div>
 <div class="section">
     <div class="section-text">
-        <img id="sym1" src=".img/symbol1.png" alt="Logo">
-        <h3>Digitale Feinarbeit</h3>
-        <p>Wir erstellen für Sie nicht nur eine Website, eine App oder eine Desktopanwendung. Wir erschaffen zusammen mit Ihnen ein digitales Erlebnis, das keine technologischen Grenzen kennt.</p>
+        <img src="assets/images/symbol1.png" alt="Logo">
+        <h3>Höchste Qualität</h3>
+        <p>Wir legen größten Wert auf Qualität und benutzen nur die neuesten Technologien.</p>
     </div>
     <div class="section-text">
-        <img id="sym1" src=".img/symbol2.png" alt="Logo">
-        <h3>100% recycelte Ideen</h3>
-        <p>Wir stehen für Erfahrung, technisches Know-how, sowie Innovation</p>
+        <img src="assets/images/symbol2.png" alt="Logo">
+        <h3>Wo Ideen wachsen</h3>
+        <p>Wir stehen für Erfahrung, technisches Know-how sowie Innovation.</p>
     </div>
     <div class="section-text">
-        <img id="sym1" src=".img/symbol3.png" alt="Logo">
+        <img src="assets/images/symbol3.png" alt="Logo">
         <h3>Aufwind verschaffen</h3>
-        <p>Wir arbeiten eng mit Ihnen zusammen, sind immer erreichbar und hören nicht auf, bis Sie zufrieden sind, und bis ihr Webauftritt Ihnen den gewünschten Effekt erzielt hat.</p>
+        <p>Wir arbeiten eng mit Ihnen zusammen, sind immer erreichbar und hören nicht auf, bis Sie zufrieden sind.</p>
     </div>
 </div>
 <footer>
     <div>
         <p>fention engineering Inh. Johannes Frielingsdorf</p>
-        <a class="footer-link" href="imprint.html">Imprint</a>
-        <a class="footer-link" href="privacy_policy.html">Privacy Policy</a>
+        <a class="footer-link" href="/imprint.html">Imprint</a>
+        <a class="footer-link" href="/privacy_policy.html">Privacy Policy</a>
     </div>
 </footer>
 </body>
